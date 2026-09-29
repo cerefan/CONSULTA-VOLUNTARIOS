@@ -7,6 +7,10 @@
   var MSG_NADA = ["No encontramos ese nombre en la base de datos.", "Revisa que hayas escrito correctamente tu nombre y apellido."];
   var MSG_CARGA = ["No pudimos cargar los turnos.", "Revisa tu conexión e intenta de nuevo en unos minutos."];
 
+  // Si se escribe "Turno 1" se muestra quién colabora en ese turno (todas las personas).
+  // Ponlo en false para volver a mostrar únicamente consultas individuales.
+  var CONSULTA_POR_TURNO = true;
+
   var $ = function (id) { return document.getElementById(id); };
   var form = $("formulario"), campo = $("nombre"), boton = $("consultar");
   var vistaBusqueda = $("vista-busqueda"), vistaResultado = $("vista-resultado");
@@ -75,16 +79,47 @@
     }
 
     vistaResultado.appendChild(el("p", "gracias", GRACIAS));
+    vistaResultado.appendChild(botonOtro());
+    presentarResultado(titulo);
+  }
+
+  function botonOtro() {
     var otro = el("button", "boton secundario", "Consultar otro nombre");
     otro.type = "button";
     otro.style.width = "100%";
     otro.addEventListener("click", nuevaConsulta);
-    vistaResultado.appendChild(otro);
+    return otro;
+  }
 
+  function presentarResultado(titulo) {
     vistaBusqueda.hidden = true;
     vistaResultado.hidden = false;
     window.scrollTo(0, 0);
     titulo.focus({ preventScroll: true });
+  }
+
+  function mostrarTurno(t) {
+    limpiarAvisos();
+    vistaResultado.textContent = "";
+    var titulo = el("h2", "nombre", "Turno " + t.numero);
+    titulo.tabIndex = -1;
+    vistaResultado.appendChild(titulo);
+    if (t.horario) vistaResultado.appendChild(el("p", "horario-turno", t.horario));
+
+    t.grupos.forEach(function (g) {
+      vistaResultado.appendChild(el("h3", "seccion-titulo", g.area));
+      g.subareas.forEach(function (s) {
+        var c = el("article", g.area === "Reserva" ? "tarjeta especial" : "tarjeta");
+        if (s.nombre) c.appendChild(el("h3", null, s.nombre));
+        var ul = el("ul", "lista-nombres");
+        s.personas.forEach(function (n) { ul.appendChild(el("li", null, n)); });
+        c.appendChild(ul);
+        vistaResultado.appendChild(c);
+      });
+    });
+
+    vistaResultado.appendChild(botonOtro());
+    presentarResultado(titulo);
   }
 
   function mostrarSugerencias(lista) {
@@ -103,6 +138,11 @@
     evento.preventDefault();
     limpiarAvisos();
     if (!personas) return;
+    if (CONSULTA_POR_TURNO) {
+      var t = Buscador.consultarTurno(campo.value, personas);
+      if (t && t.tipo === "turno") return mostrarTurno(t);
+      if (t) { mostrarMensaje(["No encontramos ese turno en la base de datos."]); campo.focus(); return; }
+    }
     var r = Buscador.buscar(campo.value, personas);
     if (r.tipo === "vacio") { mostrarMensaje([MSG_VACIO]); campo.focus(); }
     else if (r.tipo === "exacto") mostrarResultado(r.persona);
@@ -120,6 +160,7 @@
     campo.focus();
   }
 
+  $("ayuda-turno").hidden = !CONSULTA_POR_TURNO;
   form.addEventListener("submit", consultar);
 
   fetch("datos/voluntarios.json", { cache: "no-cache" })

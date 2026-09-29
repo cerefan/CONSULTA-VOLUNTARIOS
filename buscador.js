@@ -103,7 +103,65 @@
     return { tipo: "sugerencias", personas: candidatas.slice(0, 3).map(function (c) { return c.persona; }) };
   }
 
-  var api = { normalizar: normalizar, levenshtein: levenshtein, buscar: buscar };
+  // ---- Consulta por turno: "Turno 1", "turno1", "TURNOS 2" -------------------------------
+  var ORDEN_AREAS = ["Accesos", "Stand", "Zonas", "Colaciones", "Logística", "Cuidado Ambiental", "Reserva"];
+
+  function ordenArea(nombre) {
+    var i = ORDEN_AREAS.indexOf(nombre);
+    return i === -1 ? ORDEN_AREAS.length : i;
+  }
+
+  function comparar(a, b) {
+    return a.localeCompare(b, "es", { numeric: true, sensitivity: "base" });
+  }
+
+  // Devuelve null si el texto no tiene forma de "turno N".
+  // Si la tiene: { tipo: "turno", numero, horario, grupos: [{ area, subareas: [{ nombre, personas: [] }] }] }
+  //           o { tipo: "turno-inexistente", numero }
+  function consultarTurno(consulta, personas) {
+    var m = /^turnos? ?(\d{1,2})$/.exec(normalizar(consulta));
+    if (!m) return null;
+    var numero = parseInt(m[1], 10), horario = null, porArea = {};
+
+    function agregar(area, subarea, persona) {
+      var a = porArea[area] || (porArea[area] = {});
+      var clave = subarea || "";
+      (a[clave] || (a[clave] = [])).push(persona.nombre);
+    }
+
+    personas.forEach(function (p) {
+      p.turnos.forEach(function (t) {
+        if (t.turno !== numero) return;
+        if (t.horario) horario = t.horario;
+        agregar(t.area || "Sin área", t.subarea, p);
+      });
+      p.especiales.forEach(function (e) {
+        if (e.tipo === "Reserva" && e.turno === numero) {
+          if (e.horario) horario = e.horario;
+          agregar("Reserva", null, p);
+        }
+      });
+    });
+
+    var areas = Object.keys(porArea);
+    if (!areas.length) return { tipo: "turno-inexistente", numero: numero };
+    areas.sort(function (a, b) { return ordenArea(a) - ordenArea(b) || comparar(a, b); });
+    return {
+      tipo: "turno",
+      numero: numero,
+      horario: horario,
+      grupos: areas.map(function (area) {
+        return {
+          area: area,
+          subareas: Object.keys(porArea[area]).sort(comparar).map(function (s) {
+            return { nombre: s, personas: porArea[area][s].sort(comparar) };
+          })
+        };
+      })
+    };
+  }
+
+  var api = { normalizar: normalizar, levenshtein: levenshtein, buscar: buscar, consultarTurno: consultarTurno };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else raiz.Buscador = api;
 })(typeof window !== "undefined" ? window : this);

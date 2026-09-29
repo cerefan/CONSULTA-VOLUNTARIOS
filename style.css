@@ -134,6 +134,7 @@ input[type="text"]:disabled { background: #eef1f7; }
   font-size: 1.6rem;
   line-height: 1.25;
 }
+#vista-resultado h2.nombre:focus { outline: none; }
 .seccion-titulo {
   margin: 24px 0 10px;
   font-size: 0.85rem;
@@ -170,6 +171,13 @@ input[type="text"]:disabled { background: #eef1f7; }
   line-height: 1.35;
 }
 .sin-datos { text-align: center; color: var(--suave); }
+
+.ayuda { margin: 16px 0 0; text-align: center; font-size: 0.95rem; color: var(--suave); }
+.horario-turno { margin: -8px 0 8px; text-align: center; font-weight: 600; font-size: 1.15rem; color: var(--suave); }
+.lista-nombres { margin: 8px 0 0; padding: 0; list-style: none; }
+.lista-nombres li { padding: 6px 0; border-top: 1px solid var(--azul-claro); font-weight: 600; }
+.lista-nombres li:first-child { border-top: 0; }
+.tarjeta h3 + .lista-nombres { margin-top: 6px; }
 
 .pie { text-align: center; padding: 16px; font-size: 0.8rem; color: var(--suave); }
 
