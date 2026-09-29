@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00276d">
+  <title>Consulta tus turnos · Aconcagua Fest</title>
+  <meta name="description" content="Consulta tus turnos de colaboración en el Aconcagua Fest.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/logocerefan-web.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="contenedor">
+    <header class="cabecera">
+      <img class="logo" src="assets/logocerefan-web.png" alt="Logo de CEREFAN" width="640" height="608">
+      <p class="evento">Aconcagua Fest</p>
+    </header>
+
+    <section id="vista-busqueda" aria-labelledby="titulo">
+      <h1 id="titulo">Consulta tus turnos</h1>
+      <p class="intro">Ingresa tu nombre y apellido para consultar tus turnos de colaboración.</p>
+
+      <form id="formulario" novalidate autocomplete="off">
+        <label for="nombre">Nombre y apellido</label>
+        <input id="nombre" name="nombre" type="text" inputmode="text" autocapitalize="words"
+               autocorrect="off" spellcheck="false" placeholder="Ej.: María Eugenia Humeres"
+               aria-describedby="mensaje" disabled>
+        <button type="submit" class="boton" id="consultar" disabled>Consultar</button>
+      </form>
+
+      <div id="mensaje" class="mensaje" role="alert" aria-live="polite" hidden></div>
+      <div id="sugerencias" class="sugerencias" hidden></div>
+    </section>
+
+    <section id="vista-resultado" aria-live="polite" hidden></section>
+  </main>
+
+  <footer class="pie">CEREFAN · Aconcagua Fest</footer>
+  <script src="buscador.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

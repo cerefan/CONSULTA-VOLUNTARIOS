@@ -1,0 +1,845 @@
+[
+ {
+  "nombre": "Alexis Moscoso",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Stand",
+    "subarea": "Información"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Amapola San Juán",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Stand",
+    "subarea": "Talleres"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Anabella Gonzalez",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Accesos",
+    "subarea": "Acceso 1"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Stand",
+    "subarea": "Merch"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Zonas",
+    "subarea": "Proyectos"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Antonia Paredes",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Stand",
+    "subarea": "Información"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Stand",
+    "subarea": "Talleres"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Claudia Bustamante",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Stand",
+    "subarea": "Merch"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Elisa Quezada",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Accesos",
+    "subarea": "Acceso 1"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Logística",
+    "subarea": "Grupo 1"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Cuidado Ambiental",
+    "subarea": "Grupo 1"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Esperanza Muñoz",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Zonas",
+    "subarea": "Proyectos"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Esteban Vargas",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Accesos",
+    "subarea": "Acceso 2"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Cuidado Ambiental",
+    "subarea": "Grupo 2"
+   }
+  ],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   },
+   {
+    "tipo": "Reserva",
+    "turno": 2,
+    "horario": "13:00–16:00"
+   },
+   {
+    "tipo": "Desmontaje",
+    "momento": "Lunes 19, desde el mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Evelyn Peñaloza",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Zonas",
+    "subarea": "Emprendedores"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Félix Zapata",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Accesos",
+    "subarea": "Acceso 3"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Franco Loyola",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Stand",
+    "subarea": "Información"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Stand",
+    "subarea": "Información"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Gabriela Aros",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Stand",
+    "subarea": "Merch"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Accesos",
+    "subarea": "Acceso 1"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Zonas",
+    "subarea": "Emprendedores"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Gianluca Rojo",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Colaciones",
+    "subarea": "Preparación"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Accesos",
+    "subarea": "Acceso 2"
+   }
+  ],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Gonzalo López",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Logística",
+    "subarea": "Grupo 1"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Zonas",
+    "subarea": "Proyectos"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Hugo Bernal",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Logística",
+    "subarea": "Grupo 1"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Accesos",
+    "subarea": "Acceso 1"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Ismael Rivera",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Accesos",
+    "subarea": "Acceso 2"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Stand",
+    "subarea": "Merch"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Ivana Ubilla",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Accesos",
+    "subarea": "Acceso 1"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Zonas",
+    "subarea": "Emprendedores"
+   }
+  ],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Javiera Calderón",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Stand",
+    "subarea": "Talleres"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Javiera Castro",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Zonas",
+    "subarea": "Stands"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Stand",
+    "subarea": "Talleres"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Accesos",
+    "subarea": "Acceso 2"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Javiera Quijano",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Zonas",
+    "subarea": "Stands"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Accesos",
+    "subarea": "Acceso 2"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Jeanira Garay",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Zonas",
+    "subarea": "Proyectos"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Jeanira Yáñez",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Logística",
+    "subarea": "Grupo 2"
+   }
+  ],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   },
+   {
+    "tipo": "Reserva",
+    "turno": 3,
+    "horario": "16:00–19:00"
+   },
+   {
+    "tipo": "Desmontaje",
+    "momento": "Lunes 19, desde el mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Jennifer Rebolledo",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Accesos",
+    "subarea": "Acceso 1"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Zonas",
+    "subarea": "Emprendedores"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Jorge Arancibia",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Zonas",
+    "subarea": "Emprendedores"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Juán Berrios",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Colaciones",
+    "subarea": "Preparación"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Accesos",
+    "subarea": "Acceso 2"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Zonas",
+    "subarea": "Stands"
+   }
+  ],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   },
+   {
+    "tipo": "Desmontaje",
+    "momento": "Lunes 19, desde el mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Julieta Mendez",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Colaciones",
+    "subarea": "Preparación"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Accesos",
+    "subarea": "Acceso 3"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Karerina Castillo",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Accesos",
+    "subarea": "Acceso 3"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Zonas",
+    "subarea": "Stands"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Luis Tuseddú",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Logística",
+    "subarea": "Grupo 2"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Accesos",
+    "subarea": "Acceso 1"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Cuidado Ambiental",
+    "subarea": "Grupo 1"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "María Eugenia Humeres",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Accesos",
+    "subarea": "Acceso 3"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Zonas",
+    "subarea": "Proyectos"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Stand",
+    "subarea": "Merch"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "María José Malhue",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Stand",
+    "subarea": "Información"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Martina Bustos",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Accesos",
+    "subarea": "Acceso 3"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Miguel Ángel Zerené",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Logística",
+    "subarea": "Grupo 2"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Accesos",
+    "subarea": "Acceso 2"
+   }
+  ],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   },
+   {
+    "tipo": "Reserva",
+    "turno": 1,
+    "horario": "10:00–13:00"
+   },
+   {
+    "tipo": "Desmontaje",
+    "momento": "Lunes 19, desde el mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Millaray Jegó",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Zonas",
+    "subarea": "Stands"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Cuidado Ambiental",
+    "subarea": "Grupo 2"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Nicole Prado",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Colaciones",
+    "subarea": "Repartir"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Patricia Fornells",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Colaciones",
+    "subarea": "Repartir"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Accesos",
+    "subarea": "Acceso 1"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Rosita Rodriguez",
+  "turnos": [
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Stand",
+    "subarea": "Merch"
+   }
+  ],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Simón Aros",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Zonas",
+    "subarea": "Emprendedores"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Sophia Veliz",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Zonas",
+    "subarea": "Proyectos"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Accesos",
+    "subarea": "Acceso 1"
+   }
+  ],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Tania Suazo",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Accesos",
+    "subarea": "Acceso 3"
+   },
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Zonas",
+    "subarea": "Stands"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Stand",
+    "subarea": "Talleres"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Valentina Laguna",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Colaciones",
+    "subarea": "Repartir"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Accesos",
+    "subarea": "Acceso 2"
+   }
+  ],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Valentina Santibañez",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Logística",
+    "subarea": "Grupo 2"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Accesos",
+    "subarea": "Acceso 3"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Valeska Nahuelcura",
+  "turnos": [
+   {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Stand",
+    "subarea": "Talleres"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Accesos",
+    "subarea": "Acceso 3"
+   }
+  ],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   },
+   {
+    "tipo": "Desmontaje",
+    "momento": "Lunes 19, desde el mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Vania Vasquez",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Logística",
+    "subarea": "Grupo 1"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Accesos",
+    "subarea": "Acceso 3"
+   }
+  ],
+  "especiales": []
+ },
+ {
+  "nombre": "Victoria Villalba",
+  "turnos": [],
+  "especiales": [
+   {
+    "tipo": "Montaje",
+    "momento": "Viernes 16, mediodía"
+   },
+   {
+    "tipo": "Desmontaje",
+    "momento": "Lunes 19, desde el mediodía"
+   }
+  ]
+ },
+ {
+  "nombre": "Yahaira Flores",
+  "turnos": [
+   {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Accesos",
+    "subarea": "Acceso 2"
+   }
+  ],
+  "especiales": []
+ }
+]
