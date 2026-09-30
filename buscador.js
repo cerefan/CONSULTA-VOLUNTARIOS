@@ -161,7 +161,38 @@
     };
   }
 
-  var api = { normalizar: normalizar, levenshtein: levenshtein, buscar: buscar, consultarTurno: consultarTurno };
+  // ---- Consulta por asignación especial: "Montaje", "Desmontaje", "Reserva" -----------------
+  // Devuelve null si el texto no coincide con ningún tipo presente en los datos.
+  // Si coincide: { tipo: "especial", nombre, grupos: [{ titulo, personas: [] }] }
+  function consultarEspecial(consulta, personas) {
+    var q = normalizar(consulta).replace(/s$/, "");
+    if (!q) return null;
+    var nombre = null, porGrupo = {}, orden = [];
+
+    personas.forEach(function (p) {
+      p.especiales.forEach(function (e) {
+        if (normalizar(e.tipo).replace(/s$/, "") !== q) return;
+        nombre = e.tipo;
+        var titulo = e.momento || (e.turno != null ? "Turno " + e.turno + (e.horario ? " — " + e.horario : "") : "");
+        var clave = (e.turno != null ? String(1000 + e.turno) : "") + "|" + titulo;
+        if (!porGrupo[clave]) { porGrupo[clave] = { titulo: titulo, personas: [] }; orden.push(clave); }
+        porGrupo[clave].personas.push(p.nombre);
+      });
+    });
+
+    if (!nombre) return null;
+    orden.sort();
+    return {
+      tipo: "especial",
+      nombre: nombre,
+      grupos: orden.map(function (k) {
+        porGrupo[k].personas.sort(comparar);
+        return porGrupo[k];
+      })
+    };
+  }
+
+  var api = { normalizar: normalizar, levenshtein: levenshtein, buscar: buscar, consultarTurno: consultarTurno, consultarEspecial: consultarEspecial };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else raiz.Buscador = api;
 })(typeof window !== "undefined" ? window : this);

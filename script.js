@@ -7,7 +7,7 @@
   var MSG_NADA = ["No encontramos ese nombre en la base de datos.", "Revisa que hayas escrito correctamente tu nombre y apellido."];
   var MSG_CARGA = ["No pudimos cargar los turnos.", "Revisa tu conexión e intenta de nuevo en unos minutos."];
 
-  // Si se escribe "Turno 1" se muestra quién colabora en ese turno (todas las personas).
+  // Si se escribe "Turno 1", "Montaje", "Desmontaje" o "Reserva" se muestra el listado completo.
   // Ponlo en false para volver a mostrar únicamente consultas individuales.
   var CONSULTA_POR_TURNO = true;
 
@@ -98,6 +98,26 @@
     titulo.focus({ preventScroll: true });
   }
 
+  function mostrarEspecial(e) {
+    limpiarAvisos();
+    vistaResultado.textContent = "";
+    var titulo = el("h2", "nombre", e.nombre);
+    titulo.tabIndex = -1;
+    vistaResultado.appendChild(titulo);
+
+    e.grupos.forEach(function (g) {
+      if (g.titulo) vistaResultado.appendChild(el("h3", "seccion-titulo", g.titulo));
+      var c = el("article", "tarjeta especial");
+      var ul = el("ul", "lista-nombres");
+      g.personas.forEach(function (n) { ul.appendChild(el("li", null, n)); });
+      c.appendChild(ul);
+      vistaResultado.appendChild(c);
+    });
+
+    vistaResultado.appendChild(botonOtro());
+    presentarResultado(titulo);
+  }
+
   function mostrarTurno(t) {
     limpiarAvisos();
     vistaResultado.textContent = "";
@@ -142,6 +162,8 @@
       var t = Buscador.consultarTurno(campo.value, personas);
       if (t && t.tipo === "turno") return mostrarTurno(t);
       if (t) { mostrarMensaje(["No encontramos ese turno en la base de datos."]); campo.focus(); return; }
+      var esp = Buscador.consultarEspecial(campo.value, personas);
+      if (esp) return mostrarEspecial(esp);
     }
     var r = Buscador.buscar(campo.value, personas);
     if (r.tipo === "vacio") { mostrarMensaje([MSG_VACIO]); campo.focus(); }

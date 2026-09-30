@@ -655,6 +655,18 @@
   "especiales": []
  },
  {
+  "nombre": "Perla Herrera",
+  "turnos": [
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Stand",
+    "subarea": "Información"
+   }
+  ],
+  "especiales": []
+ },
+ {
   "nombre": "Rosita Rodriguez",
   "turnos": [
    {
