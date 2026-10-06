@@ -182,6 +182,19 @@
     campo.focus();
   }
 
+  // Indicación bajo el buscador: usa los tipos que realmente existen en los datos.
+  function armarAyuda(datos) {
+    var ejemplos = ["Turno 1"], vistos = {};
+    datos.forEach(function (p) {
+      p.especiales.forEach(function (e) {
+        if (!vistos[e.tipo]) { vistos[e.tipo] = true; ejemplos.push(e.tipo); }
+      });
+    });
+    var citas = ejemplos.map(function (x) { return "«" + x + "»"; });
+    var lista = citas.length > 1 ? citas.slice(0, -1).join(", ") + " o " + citas[citas.length - 1] : citas[0];
+    $("ayuda-turno").textContent = "¿Quieres ver quién colabora en un turno o tarea? Escribe, por ejemplo, " + lista + ".";
+  }
+
   $("ayuda-turno").hidden = !CONSULTA_POR_TURNO;
   form.addEventListener("submit", consultar);
 
@@ -189,6 +202,7 @@
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (datos) {
       personas = datos;
+      armarAyuda(datos);
       campo.disabled = false; boton.disabled = false;
     })
     .catch(function () { mostrarMensaje(MSG_CARGA); });

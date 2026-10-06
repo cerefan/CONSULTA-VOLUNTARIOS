@@ -5,7 +5,7 @@
    {
     "turno": 1,
     "horario": "10:00–13:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Información"
    }
   ],
@@ -17,7 +17,7 @@
    {
     "turno": 1,
     "horario": "10:00–13:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Talleres"
    }
   ],
@@ -35,7 +35,7 @@
    {
     "turno": 2,
     "horario": "13:00–16:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Merch"
    },
    {
@@ -51,15 +51,20 @@
   "nombre": "Antonia Paredes",
   "turnos": [
    {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Logística"
+   },
+   {
     "turno": 2,
     "horario": "13:00–16:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Información"
    },
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Talleres"
    }
   ],
@@ -71,7 +76,7 @@
    {
     "turno": 1,
     "horario": "10:00–13:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Merch"
    }
   ],
@@ -89,26 +94,14 @@
    {
     "turno": 2,
     "horario": "13:00–16:00",
-    "area": "Logística",
-    "subarea": "Grupo 1"
+    "area": "Zonas",
+    "subarea": "Proyectos"
    },
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Cuidado Ambiental",
-    "subarea": "Grupo 1"
-   }
-  ],
-  "especiales": []
- },
- {
-  "nombre": "Esperanza Muñoz",
-  "turnos": [
-   {
-    "turno": 2,
-    "horario": "13:00–16:00",
-    "area": "Zonas",
-    "subarea": "Proyectos"
+    "area": "Accesos",
+    "subarea": "Acceso 3"
    }
   ],
   "especiales": []
@@ -123,21 +116,22 @@
     "subarea": "Acceso 2"
    },
    {
+    "turno": 2,
+    "horario": "13:00–16:00",
+    "area": "Zonas",
+    "subarea": "Emprendedores"
+   },
+   {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Cuidado Ambiental",
-    "subarea": "Grupo 2"
+    "area": "Accesos",
+    "subarea": "Acceso 1"
    }
   ],
   "especiales": [
    {
     "tipo": "Montaje",
     "momento": "Viernes 16, mediodía"
-   },
-   {
-    "tipo": "Reserva",
-    "turno": 2,
-    "horario": "13:00–16:00"
    },
    {
     "tipo": "Desmontaje",
@@ -175,13 +169,13 @@
    {
     "turno": 2,
     "horario": "13:00–16:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Información"
    },
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Información"
    }
   ],
@@ -193,7 +187,7 @@
    {
     "turno": 1,
     "horario": "10:00–13:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Merch"
    },
    {
@@ -235,31 +229,12 @@
   ]
  },
  {
-  "nombre": "Gonzalo López",
-  "turnos": [
-   {
-    "turno": 1,
-    "horario": "10:00–13:00",
-    "area": "Logística",
-    "subarea": "Grupo 1"
-   },
-   {
-    "turno": 3,
-    "horario": "16:00–19:00",
-    "area": "Zonas",
-    "subarea": "Proyectos"
-   }
-  ],
-  "especiales": []
- },
- {
   "nombre": "Hugo Bernal",
   "turnos": [
    {
     "turno": 2,
     "horario": "13:00–16:00",
-    "area": "Logística",
-    "subarea": "Grupo 1"
+    "area": "Logística"
    },
    {
     "turno": 3,
@@ -282,7 +257,7 @@
    {
     "turno": 2,
     "horario": "13:00–16:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Merch"
    }
   ],
@@ -317,7 +292,7 @@
    {
     "turno": 1,
     "horario": "10:00–13:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Talleres"
    }
   ],
@@ -335,30 +310,12 @@
    {
     "turno": 2,
     "horario": "13:00–16:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Talleres"
    },
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Accesos",
-    "subarea": "Acceso 2"
-   }
-  ],
-  "especiales": []
- },
- {
-  "nombre": "Javiera Quijano",
-  "turnos": [
-   {
-    "turno": 1,
-    "horario": "10:00–13:00",
-    "area": "Zonas",
-    "subarea": "Stands"
-   },
-   {
-    "turno": 2,
-    "horario": "13:00–16:00",
     "area": "Accesos",
     "subarea": "Acceso 2"
    }
@@ -383,19 +340,19 @@
    {
     "turno": 2,
     "horario": "13:00–16:00",
-    "area": "Logística",
-    "subarea": "Grupo 2"
+    "area": "Colaciones",
+    "subarea": "Repartir"
+   },
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Cuidado Ambiental"
    }
   ],
   "especiales": [
    {
     "tipo": "Montaje",
     "momento": "Viernes 16, mediodía"
-   },
-   {
-    "tipo": "Reserva",
-    "turno": 3,
-    "horario": "16:00–19:00"
    },
    {
     "tipo": "Desmontaje",
@@ -415,18 +372,6 @@
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Zonas",
-    "subarea": "Emprendedores"
-   }
-  ],
-  "especiales": []
- },
- {
-  "nombre": "Jorge Arancibia",
-  "turnos": [
-   {
-    "turno": 2,
-    "horario": "13:00–16:00",
     "area": "Zonas",
     "subarea": "Emprendedores"
    }
@@ -497,7 +442,7 @@
     "turno": 3,
     "horario": "16:00–19:00",
     "area": "Zonas",
-    "subarea": "Stands"
+    "subarea": "Proyectos"
    }
   ],
   "especiales": []
@@ -508,8 +453,7 @@
    {
     "turno": 1,
     "horario": "10:00–13:00",
-    "area": "Logística",
-    "subarea": "Grupo 2"
+    "area": "Logística"
    },
    {
     "turno": 2,
@@ -520,8 +464,7 @@
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Cuidado Ambiental",
-    "subarea": "Grupo 1"
+    "area": "Cuidado Ambiental"
    }
   ],
   "especiales": []
@@ -544,7 +487,7 @@
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Merch"
    }
   ],
@@ -556,7 +499,7 @@
    {
     "turno": 1,
     "horario": "10:00–13:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Información"
    }
   ],
@@ -578,27 +521,28 @@
   "nombre": "Miguel Ángel Zerené",
   "turnos": [
    {
+    "turno": 1,
+    "horario": "10:00–13:00",
+    "area": "Zonas",
+    "subarea": "Stands"
+   },
+   {
     "turno": 2,
     "horario": "13:00–16:00",
-    "area": "Logística",
-    "subarea": "Grupo 2"
+    "area": "Accesos",
+    "subarea": "Acceso 2"
    },
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Accesos",
-    "subarea": "Acceso 2"
+    "area": "Stand Cerefan",
+    "subarea": "Talleres"
    }
   ],
   "especiales": [
    {
     "tipo": "Montaje",
     "momento": "Viernes 16, mediodía"
-   },
-   {
-    "tipo": "Reserva",
-    "turno": 1,
-    "horario": "10:00–13:00"
    },
    {
     "tipo": "Desmontaje",
@@ -618,8 +562,7 @@
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Cuidado Ambiental",
-    "subarea": "Grupo 2"
+    "area": "Cuidado Ambiental"
    }
   ],
   "especiales": []
@@ -637,30 +580,12 @@
   "especiales": []
  },
  {
-  "nombre": "Patricia Fornells",
-  "turnos": [
-   {
-    "turno": 2,
-    "horario": "13:00–16:00",
-    "area": "Colaciones",
-    "subarea": "Repartir"
-   },
-   {
-    "turno": 3,
-    "horario": "16:00–19:00",
-    "area": "Accesos",
-    "subarea": "Acceso 1"
-   }
-  ],
-  "especiales": []
- },
- {
   "nombre": "Perla Herrera",
   "turnos": [
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Información"
    }
   ],
@@ -672,7 +597,7 @@
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Merch"
    }
   ],
@@ -736,8 +661,8 @@
    {
     "turno": 3,
     "horario": "16:00–19:00",
-    "area": "Stand",
-    "subarea": "Talleres"
+    "area": "Accesos",
+    "subarea": "Acceso 2"
    }
   ],
   "especiales": []
@@ -766,30 +691,12 @@
   ]
  },
  {
-  "nombre": "Valentina Santibañez",
-  "turnos": [
-   {
-    "turno": 1,
-    "horario": "10:00–13:00",
-    "area": "Logística",
-    "subarea": "Grupo 2"
-   },
-   {
-    "turno": 3,
-    "horario": "16:00–19:00",
-    "area": "Accesos",
-    "subarea": "Acceso 3"
-   }
-  ],
-  "especiales": []
- },
- {
   "nombre": "Valeska Nahuelcura",
   "turnos": [
    {
     "turno": 2,
     "horario": "13:00–16:00",
-    "area": "Stand",
+    "area": "Stand Cerefan",
     "subarea": "Talleres"
    },
    {
@@ -816,8 +723,7 @@
    {
     "turno": 1,
     "horario": "10:00–13:00",
-    "area": "Logística",
-    "subarea": "Grupo 1"
+    "area": "Logística"
    },
    {
     "turno": 3,
@@ -830,7 +736,14 @@
  },
  {
   "nombre": "Victoria Villalba",
-  "turnos": [],
+  "turnos": [
+   {
+    "turno": 3,
+    "horario": "16:00–19:00",
+    "area": "Zonas",
+    "subarea": "Stands"
+   }
+  ],
   "especiales": [
    {
     "tipo": "Montaje",

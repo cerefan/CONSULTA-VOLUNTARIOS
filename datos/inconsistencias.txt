@@ -1,2 +1,2 @@
-Voluntarios: 46 | Filas leídas: 101 | Avisos: 0
+Voluntarios: 40 | Filas leídas: 93 | Avisos: 0
 

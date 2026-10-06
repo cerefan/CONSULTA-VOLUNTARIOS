@@ -104,7 +104,8 @@
   }
 
   // ---- Consulta por turno: "Turno 1", "turno1", "TURNOS 2" -------------------------------
-  var ORDEN_AREAS = ["Accesos", "Stand", "Zonas", "Colaciones", "Logística", "Cuidado Ambiental", "Reserva"];
+  // Orden en que se muestran las áreas dentro de un turno. Las que no estén aquí van al final, por orden alfabético.
+  var ORDEN_AREAS = ["Accesos", "Stand Cerefan", "Stand", "Zonas", "Colaciones", "Logística", "Cuidado Ambiental", "Reserva"];
 
   function ordenArea(nombre) {
     var i = ORDEN_AREAS.indexOf(nombre);
